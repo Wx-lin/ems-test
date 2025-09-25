@@ -1,11 +1,3 @@
-<!--
- * @Author: wb_wangxinlin wb_wangxinlin@meituan.com
- * @Date: 2025-09-25 11:04:33
- * @LastEditors: wb_wangxinlin wb_wangxinlin@meituan.com
- * @LastEditTime: 2025-09-25 12:39:09
- * @FilePath: /ems-test/src/App.vue
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
