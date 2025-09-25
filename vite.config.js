@@ -10,8 +10,22 @@ export default defineConfig({
     legacy({
       // 兼容IE11 和 Chrome 43及以上版本
       targets: ['ie >= 11', 'chrome >= 43'],
-      polyfills: true,
-      renderLegacyChunks: true
+      polyfills: [
+        'es.symbol',
+        'es.array.iterator',
+        'es.promise',
+        'es.object.assign',
+        'es.promise.finally'
+      ],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+      renderLegacyChunks: true,
+      modernPolyfills: [
+        'es.promise.finally'
+      ]
     })
   ],
+  build: {
+    target: ['es2015', 'chrome43'],
+    cssTarget: 'chrome43'
+  }
 })
