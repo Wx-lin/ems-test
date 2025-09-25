@@ -6,7 +6,7 @@ on:
       - master # 触发部署的分支，根据你的项目修改，例如 master
 
 jobs:
-  build:.github/workflows/deploy.yml
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository
