@@ -5,6 +5,11 @@ on:
     branches:
       - master # 触发部署的分支，根据你的项目修改，例如 master
 
+permissions:
+  contents: read # 允许工作流读取仓库内容
+  pages: write # 允许工作流写入 GitHub Pages
+  id-token: write # 关键：允许工作流获取 ID Token，这是部署必需的
+
 jobs:
   build:
     runs-on: ubuntu-latest
