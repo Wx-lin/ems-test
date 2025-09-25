@@ -8,9 +8,10 @@ export default defineConfig({
   plugins: [
     vue(),
     legacy({
-      targets: ['ie >= 11'], // 指定兼容IE11
-      polyfills: true, // 自动注入 polyfills
-      renderLegacyChunks: true // 为旧版浏览器生成单独的JS文件
+      // 兼容IE11 和 Chrome 43及以上版本
+      targets: ['ie >= 11', 'chrome >= 43'],
+      polyfills: true,
+      renderLegacyChunks: true
     })
   ],
 })
